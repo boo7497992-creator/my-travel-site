@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣樂齡旅遊網 | 探索寶島之美</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1504913659239-6abc87875a63?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-orange-600">樂齡旅遊 <span class="text-gray-700">TAIWAN</span></div>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#" class="hover:text-orange-500">玩樂景點</a>
+                <a href="#" class="hover:text-orange-500">美食住宿</a>
+                <a href="#" class="hover:text-orange-500">主題遊程</a>
+                <a href="#" class="hover:text-orange-500">交通資訊</a>
+            </div>
+            <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">登入管理</button>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-[600px] flex items-center justify-center text-center text-white pt-16">
+        <div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">探索最暖心的台灣旅程</h1>
+            <p class="text-xl md:text-2xl mb-8 drop-shadow-md">專為長者設計的精選路線，讓旅行輕鬆又自在</p>
+            <div class="bg-white p-2 rounded-lg shadow-xl max-w-2xl mx-auto flex">
+                <input type="text" placeholder="想去哪裡玩？(例如：阿里山、淡水老街)" class="flex-grow p-3 text-gray-800 focus:outline-none">
+                <button class="bg-orange-500 px-8 py-3 rounded-md font-bold hover:bg-orange-600 transition">搜尋</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto -mt-12 relative z-10 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:translate-y-[-5px] transition cursor-pointer">
+                <div class="text-4xl mb-2 text-orange-500">🌸</div>
+                <div class="font-bold">賞花攝影</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:translate-y-[-5px] transition cursor-pointer">
+                <div class="text-4xl mb-2 text-blue-500">♨️</div>
+                <div class="font-bold">溫泉養生</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:translate-y-[-5px] transition cursor-pointer">
+                <div class="text-4xl mb-2 text-green-500">🍃</div>
+                <div class="font-bold">森林芬多精</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:translate-y-[-5px] transition cursor-pointer">
+                <div class="text-4xl mb-2 text-yellow-500">🏮</div>
+                <div class="font-bold">古鎮巡禮</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="text-3xl font-extrabold text-gray-800">熱門推薦景點</h2>
+                <div class="h-1 w-20 bg-orange-500 mt-2"></div>
+            </div>
+            <a href="#" class="text-orange-600 font-bold hover:underline">查看更多 →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                <div class="h-56 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571474004502-c1def214ac6d?auto=format&fit=crop&w=800&q=80" alt="日月潭" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm text-orange-500 font-bold uppercase">南投縣</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">日月潭水社碼頭</h3>
+                    <p class="text-gray-600 line-clamp-2">平緩的環湖步道與舒適的遊艇行程，最適合悠閒的午後漫步。</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                <div class="h-56 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542359649-31e03ad4c938?auto=format&fit=crop&w=800&q=80" alt="九份" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm text-orange-500 font-bold uppercase">新北市</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">九份老街茶香</h3>
+                    <p class="text-gray-600 line-clamp-2">體驗復古風情與台灣茶文化，俯瞰北海岸的壯麗海景。</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                <div class="h-56 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552590635-27c2c21285f7?auto=format&fit=crop&w=800&q=80" alt="阿里山" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm text-orange-500 font-bold uppercase">嘉義縣</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">阿里山小火車之旅</h3>
+                    <p class="text-gray-600 line-clamp-2">搭乘百年鐵道穿越雲海，感受高山神木的震撼與靈氣。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lg font-bold mb-4">樂齡旅遊 TAIWAN - 帶您看見最美的台灣</p>
+            <p class="text-gray-400">© 2026 樂齡旅遊網 版權所有 | 您擁有完整管理權限</p>
+        </div>
+    </footer>
+
+</body>
+</html>
